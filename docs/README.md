@@ -4,7 +4,7 @@ Eiffel library for manipulating arbitrarily large numbers.  It implements additi
 To used the example ecf files, checkout the library to a location identified by the envirnment variable "JJ_GITHUB".
 
 ### Demo/Test/Timing
-The [demo](../demo.e) program and the [timing tests](../timing) use the Eiffel_GMP library, which depends on [The GNU Multiple Precision Arithmetic Library](https://gmplib.org), in order to compare results.  The demo program uses an override of class ROUTINE which changes the export status of feature *closed\_operands*, making the output routines in the test class easier to program.
+The [demo](../demo) program and the [timing tests](../timing) use the Eiffel_GMP library, which depends on [The GNU Multiple Precision Arithmetic Library](https://gmplib.org), in order to compare results.  The demo program uses an override of class ROUTINE which changes the export status of feature *closed\_operands*, making the output routines in the test class easier to program.
 
 The [timing tests](../timing) tests depend on the [JJ\_TEMPORAL](http://github.com/boxer41a/jj_temporal) classes.
 
