@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-22-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-22-0 http://www.eiffel.com/developers/xml/configuration-1-22-0.xsd" name="jj_big_number_64_demo" uuid="AEFA3665-080D-433D-A563-2BDE8BDA1B10">
+	<target name="jj_big_number_64_demo">
+		<root class="JJ_BIG_NUMBER_64_DEMO" feature="make"/>
+		<option warning="none" full_class_checking="true" is_attached_by_default="true" is_obsolete_iteration="true" is_obsolete_routine_type="true" syntax="standard" manifest_array_type="mismatch_warning">
+			<assertions precondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
+		</option>
+		<setting name="total_order_on_reals" value="true"/>
+		<setting name="dead_code_removal" value="feature"/>
+		<capability>
+			<catcall_detection support="none"/>
+			<concurrency support="none"/>
+			<void_safety support="all"/>
+		</capability>
+		<library name="base" location="$ISE_LIBRARY\library\base\base.ecf" readonly="true">
+			<option warning="none">
+				<assertions precondition="true"/>
+			</option>
+		</library>
+		<library name="eiffel_gmp" location="$JJ_OTHER\eiffel_gmp-master\library\src\library.ecf" readonly="false">
+			<option warning="none">
+			</option>
+		</library>
+		<library name="jj_randoms" location="$JJ_GITHUB\jj_randoms\classes\jj_randoms.ecf" readonly="false">
+			<option warning="none">
+			</option>
+		</library>
+		<library name="testing" location="$ISE_LIBRARY\library\testing\testing.ecf">
+			<option warning="none">
+			</option>
+		</library>
+		<cluster name="demo" location=".\" recursive="true">
+			<option warning="none" is_obsolete_iteration="true">
+			</option>
+			<file_rule>
+				<exclude>/.svn$</exclude>
+				<exclude>/CVS$</exclude>
+				<exclude>/EIFGENs$</exclude>
+				<exclude>/demo$</exclude>
+				<exclude>/docs$</exclude>
+			</file_rule>
+		</cluster>
+		<cluster name="jj_big_number_64" location="..\" recursive="true">
+			<option warning="none" is_obsolete_iteration="true">
+				<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
+			</option>
+			<file_rule>
+				<exclude>/.git$</exclude>
+				<exclude>/.svn$</exclude>
+				<exclude>/CVS$</exclude>
+				<exclude>/EIFGENs$</exclude>
+				<exclude>/demo$</exclude>
+				<exclude>/docs$</exclude>
+				<exclude>/jj_override$</exclude>
+				<exclude>timing</exclude>
+			</file_rule>
+		</cluster>
+		<override name="jj_override" location="$JJ_GITHUB\jj_big_number_64\jj_override\" recursive="true">
+			<option warning="none" is_obsolete_iteration="true">
+			</option>
+		</override>
+	</target>
+</system>
